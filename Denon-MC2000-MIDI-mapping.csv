@@ -98,9 +98,8 @@ Denon No,Denon label,MIDI No,Command Name (XML/JS),Mixxx Control,Group,Control T
 23,Track selection knob (SEL.),B0-54,ScrollVertical,[Library]ScrollVertical,[Library],Relative CC (Encoder),Library vertical scroll encoder,–,No shift layer
 24,Window switch button (BACK/FWD),B0-30,MoveFocusBackward,[Library]MoveFocusBackward,[Library],Binary,Move focus to previous library pane,–,No shift layer
 24,Window switch button (BACK/FWD),B0-29,MoveFocusForward,[Library]MoveFocusForward,[Library],Binary,Move focus to next library pane,–,No shift layer
-25,Browse 1 button,91-64,LoadSelectedTrack,[ChannelN]LoadSelectedTrack,[Channel2],Binary,Load track from library,–,No shift layer
-25,Preview Deck Play,90-64,libraryPreviewButton,MC2000.libraryPreviewComp.input,[PreviewDeck1],Binary,Play/Stop track in  Preview Deck,–,No shift layer
-25,Browse 1 button,90-64,libraryPreviewButton,MC2000.libraryPreviewComp.input,[Library],Binary,Load and play selected track in Preview Deck,–,No shift layer
+25,Browse 1 button,90-64,browse1Button,[ChannelN]beatjump_backward,[Channel1],Binary,Beat jump backward on Deck 1 (beatjump_size),[Channel2]beatjump_backward,Shift: beat jump backward on Deck 2
+25,Browse 2 button,90-67,browse2Button,[ChannelN]beatjump_forward,[Channel1],Binary,Beat jump forward on Deck 1 (beatjump_size),[Channel2]beatjump_forward,Shift: beat jump forward on Deck 2
 26,Library Back Button,B0-30,libraryFocusBackwardBtn,MC2000.libraryFocusBackwardComp.input,[Library],Binary,Move focus to previous library pane,–,No shift layer
 26,Library Forward Button,B0-29,libraryFocusForwardBtn,MC2000.libraryFocusForwardComp.input,[Library],Binary,Move focus to next library pane,–,No shift layer
 26,Library Go To Item,B0-28,libraryGoToItemBtn,MC2000.libraryGoToItemComp.input,[Library],Binary,Go to selected item in library,–,No shift layer

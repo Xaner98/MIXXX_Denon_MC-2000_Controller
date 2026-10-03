@@ -2221,6 +2221,28 @@ MC2000.libraryPreviewButton = function(channel, control, value, status, group) {
     
 };
 
+//////////////////////////////
+// Browse 1/2 buttons       //
+//////////////////////////////
+// Beat jump by Mixxx's configured beatjump_size
+// Browse 1: jump backward, Browse 2: jump forward
+// Normal: Deck 1, Shift: Deck 2
+MC2000.beatJump = function(direction, value, status) {
+    // Only act on note-on press, ignore release (0x80)
+    if ((status & 0xF0) !== 0x90 || !MC2000.isButtonOn(value)) return;
+    var group = MC2000.isShiftActive() ? "[Channel2]" : "[Channel1]";
+    engine.setValue(group, "beatjump_" + direction, 1);
+    if (MC2000.debugMode) MC2000.debugLog(group + " beatjump_" + direction);
+};
+
+MC2000.browse1Button = function(channel, control, value, status, group) {
+    MC2000.beatJump("backward", value, status);
+};
+
+MC2000.browse2Button = function(channel, control, value, status, group) {
+    MC2000.beatJump("forward", value, status);
+};
+
 
 
 

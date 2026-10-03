@@ -1004,19 +1004,33 @@
         <options><Script-Binding/></options>
       </control>
 
-    <!-- preview deck 1 track -->
+    <!-- Browse 1/2: beat jump backward/forward (Deck 1, Shift: Deck 2) -->
       <control>
-         <group>[PreviewDeck1]</group>
-        <key>MC2000.libraryPreviewButton</key>
+        <group>[Channel1]</group>
+        <key>MC2000.browse1Button</key>
         <status>0x90</status>
         <midino>0x64</midino>
         <options><Script-Binding/></options>
       </control>
       <control>
-        <group>[PreviewDeck1]</group>
-        <key>MC2000.libraryPreviewButton</key>
+        <group>[Channel1]</group>
+        <key>MC2000.browse1Button</key>
         <status>0x80</status>
         <midino>0x64</midino>
+        <options><Script-Binding/></options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>MC2000.browse2Button</key>
+        <status>0x90</status>
+        <midino>0x67</midino>
+        <options><Script-Binding/></options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>MC2000.browse2Button</key>
+        <status>0x80</status>
+        <midino>0x67</midino>
         <options><Script-Binding/></options>
       </control>
 

@@ -143,7 +143,7 @@ Sample pre-gain is managed by shift functions  of BEATS button/encoder.  The con
 
 - **Browse Encoder**: Scroll through library tracks.
 - **Load Buttons**: Load selected track to Deck 1 or Deck 2.
-- **Preview Button**: <BROWSE1> button to Start/Stop track in preview deck.
+- **Beat Jump**: <BROWSE1> jumps backward, <BROWSE2> jumps forward on Deck 1 by the beat jump size set in Mixxx. <Shift> + <BROWSE1>/<BROWSE2> does the same on Deck 2.
 
 ## LEDs & Feedback
 
